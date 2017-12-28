@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Set Alaram"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="23dp"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:id="@+id/name_et"
+        android:hint=" Alaram Name"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/in_date"
+    android:layout_marginTop="82dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT DATE"
+        android:id="@+id/btn_date"
+        android:layout_alignBottom="@+id/in_date"
+        android:layout_toRightOf="@+id/in_date"
+        android:layout_toEndOf="@+id/in_date" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/in_time"
+        android:layout_below="@+id/in_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT TIME"
+        android:id="@+id/btn_time"
+        android:layout_below="@+id/btn_date"
+        android:layout_alignLeft="@+id/btn_date"
+        android:layout_alignStart="@+id/btn_date" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+            android:id="@+id/button1"
+        android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextCity"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:onClick="run"
+            android:layout_gravity="center"
+            android:text="save" />
+
+
+
+    </LinearLayout>
+

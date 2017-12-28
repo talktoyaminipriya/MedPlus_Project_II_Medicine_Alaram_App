@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Add Drug Details"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:gravity="center"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        android:textSize="23dp"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:id="@+id/name_et"
+        android:hint=" Drug Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="23dp"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:id="@+id/descr_et"
+        android:hint=" Description"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="23dp"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:id="@+id/price_et"
+        android:hint="Price"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextCity"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:onClick="run"
+            android:text="save" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
